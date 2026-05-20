@@ -1,0 +1,140 @@
+.ai-engineer-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  color: #E2E8F0;
+  font-size: 2rem;
+}
+
+.train-btn {
+  background-color: #38BDF8;
+  color: #0F172A;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.train-btn:hover:not(:disabled) {
+  background-color: #0EA5E9;
+}
+
+.train-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.model-status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.model-card,
+.metrics-card {
+  background-color: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.model-card h3,
+.metrics-card h3 {
+  color: #38BDF8;
+  margin-bottom: 1rem;
+}
+
+.model-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.model-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #0F172A;
+  border-radius: 6px;
+}
+
+.status-on {
+  color: #22C55E;
+  font-weight: 600;
+}
+
+.status-off {
+  color: #EF4444;
+  font-weight: 600;
+}
+
+.metric-item {
+  padding: 0.75rem;
+  background-color: #0F172A;
+  border-radius: 6px;
+}
+
+.metrics-grid-internal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.metric-item strong {
+  color: #38BDF8;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.metric-item div {
+  color: #E2E8F0;
+  margin: 0.25rem 0;
+}
+
+.charts-section {
+  margin-top: 2rem;
+}
+
+.charts-section h2 {
+  color: #E2E8F0;
+  margin-bottom: 1.5rem;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.chart-card {
+  background-color: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.chart-card h3 {
+  color: #38BDF8;
+  margin-bottom: 1rem;
+}
+
+.loading {
+  text-align: center;
+  color: #38BDF8;
+  padding: 3rem;
+  font-size: 1.1rem;
+}
